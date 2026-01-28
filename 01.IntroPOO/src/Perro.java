@@ -3,6 +3,7 @@ import java.util.Date;
 
 public class Perro {
     //Estado-Atributos
+    String nombre;  //"Firulais"
     String raza;    //"Shar-pei"
     String color;   //"Negro con manchas blancas"
     double peso;    //En gramos, p.ej: 2300
@@ -11,11 +12,11 @@ public class Perro {
     
     //Comportamiento-Metodos
     public void ladrar(){
-        System.out.println("Guau-Guau");
+        System.out.println(nombre + ": Guau-Guau");
     }
     
     public void comer(){
-        System.out.println("Ñam,ñam...Slurp...");
+        System.out.println(nombre + ": Ñam,ñam...Slurp...");
     }    
     
 }
