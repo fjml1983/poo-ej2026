@@ -1,0 +1,22 @@
+classDiagram
+    Animal <|-- Caballo
+    Animal <|-- Pato
+
+    class Animal {
+        +String tipoAlimentacion
+        +String tipoReproduccion
+        +String tipoEstructuraCorporal
+        +comer(comida : String)
+        +reproducir(pareja : Animal)
+        +morir()
+    }
+
+    class Caballo {
+        +String raza
+        +correr()
+    }
+
+    class Pato {
+        +int plumas
+        +graznar()
+    }

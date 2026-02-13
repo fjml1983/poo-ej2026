@@ -1,0 +1,24 @@
+@startuml
+class Animal {
+  +tipoAlimentacion : String
+  +tipoReproduccion : String
+  +tipoEstructuraCorporal : String
+
+  +comer(comida : String)
+  +reproducir(pareja : Animal)
+  +morir()
+}
+
+class Caballo {
+  +raza : String
+  +correr()
+}
+
+class Pato {
+  +plumas : int
+  +graznar()
+}
+
+Animal <|-- Caballo
+Animal <|-- Pato
+@enduml
