@@ -8,6 +8,7 @@ public class Personaje {
             this.nombre = nombre;   
             this.xp = 0;
             this.nivel = 1;
+            this.hp = 0;            
         }
         
 	public void caminar(String direccion) {
