@@ -6,16 +6,16 @@ public class Perro extends Mascota {
     private int pulgas;
     
     public Perro(String nombre, String raza){
-        this.nombre = nombre;
-        this.raza = raza;
+        super(nombre, raza);
     }
     
     public Perro(String nombre, int pulgas){
-        this.nombre = nombre;
+        super(nombre, "Callejero");
         this.pulgas = pulgas;
     }    
     
-    public void ladrar(){
+    public void ladrar(Gato g){
         System.out.println(this.nombre + ": Guau Guau");
+        g.maullar();
     }    
 }
