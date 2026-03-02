@@ -13,7 +13,8 @@ public class VeterinariaMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //new VeterinariaGUI();
+        VeterinariaGUI ventana = new VeterinariaGUI();
     }
     
 }
