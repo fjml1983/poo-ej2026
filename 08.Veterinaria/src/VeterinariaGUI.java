@@ -17,10 +17,11 @@ public class VeterinariaGUI extends JFrame {
         mensajeCrearMascota = new JLabel();
         mensajeCrearMascota.setText("Formulario Crear Mascota");
         mensajeCrearMascota.setBounds(50, 50, 200, 30);
+        //mensajeCrearMascota.setFont(Font);
         //Etiqueta para el campo Nombre
         lblNombre = new JLabel();
         lblNombre.setText("Nombre:");
-        lblNombre.setBounds(50, 80, 100, 30);
+        lblNombre.setBounds(50, 80, 100, 30);        
         
         
         //Inicializar ventana
