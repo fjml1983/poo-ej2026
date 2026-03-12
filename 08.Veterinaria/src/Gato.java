@@ -11,4 +11,9 @@ public class Gato extends Mascota{
     public void maullar(){
         System.out.println("El gato " + nombre +  " maulla");
     }
+    
+    public void jugar(){
+        System.out.println("Miau Miau, girando la bola de estambre");
+        peso -= 30;
+    }
 }

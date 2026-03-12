@@ -7,23 +7,21 @@
  *
  * @author FJML1983
  */
-public class VeterinariaMain {
+public class Principal {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //new VeterinariaGUI();
-        //VeterinariaGUI ventana = new VeterinariaGUI();
+        Rectangulo r = new Rectangulo("A", 10, 10);
+        Circulo c = new Circulo("A", 50);
         
-        Perro p = new Perro("Pepo", 0);
+        System.out.println("Area del rectangulo:");
+        double area = r.calcularArea();
+        System.out.println(area);
         
-        p.ladrar(200);
-        p.ladrar("fuerte");
-        p.jugar();
-        
-        Gato g = new Gato("Panfilo");
-        g.jugar();
+        System.out.println("Area del circulo:");
+        System.out.println(c.calcularArea());
         
         
     }
