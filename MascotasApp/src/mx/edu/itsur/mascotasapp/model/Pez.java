@@ -8,6 +8,6 @@ package mx.edu.itsur.mascotasapp.model;
  *
  * @author FJML1983
  */
-public class Gato extends Mascota{
+public class Pez extends Mascota {
     
 }
