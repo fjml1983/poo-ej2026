@@ -1,9 +1,10 @@
 package mx.edu.itsur.mascotasapp.main.juego;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.Scanner;
-import mx.edu.itsur.mascotasapp.model.Mascota;
-import mx.edu.itsur.mascotasapp.model.Veterinario;
+import mx.edu.itsur.mascotasapp.model.*;
 
 /**
  *
@@ -27,7 +28,10 @@ public class JuegoMascotasApp {
      */
     public void iniciarJuego() {
         //Logica del juego
-        
+
+        //Crear una unica instancia del scanner para ser utilizada muchas veces
+        Scanner lector = new Scanner(System.in);
+
         //Repetir mientras no sea game over
         while (!gameOver) {
 
@@ -44,9 +48,8 @@ public class JuegoMascotasApp {
                     + "¿Que accion deseas realizar? \n"
                     + "(escribe el numero y presiona ENTER): "
             );
-            
+
             //Paso 2. Leer la opcion del usuario
-            Scanner lector = new Scanner(System.in);
             int opcion = lector.nextInt();
 
             //Paso 3. Realizar la accion elegida
@@ -59,6 +62,15 @@ public class JuegoMascotasApp {
                     break;
                 case 3:
                     this.jugarConMascota();
+                    break;
+                case 4:
+                    this.llevarMascotaAlVeterinario();
+                    break;
+                case 5:
+                    this.adoptarNuevaMascota();
+                    break;
+                case 6:
+                    gameOver = true;
                     break;
                 default:
                     break;
@@ -86,7 +98,38 @@ public class JuegoMascotasApp {
         //TODO programar lógica
     }
 
+    /**
+     * La aplicación deberá permitir registrar la nueva mascota pidiendo llenar
+     * los datos a través de un formulario
+     */
     private void adoptarNuevaMascota() {
         //TODO programar lógica
+        System.out.println("**LLENA EL FORMULARIO PARA ADOPTAR LA NUEVA MASCOTA **");
+        System.out.println("Tipo de mascota? [p]erro, [g]gato, Pe[z] ([x] para cancelar) ");
+
+        Scanner scan = new Scanner(System.in);
+        char tipoMascota = (char) scan.nextInt();
+        
+        //Pedir los datos para llenar estas variables:
+        String nombre = "??";
+        String color = "??";
+        String raza = "??";
+        int anioNac = 0;
+        int mesNac = 0;
+        int diaNac = 0;
+        
+        //Escribir aqui todos los scanner.next necesarios
+        
+        Mascota m = null;
+        if (tipoMascota == 'p') {
+            m = new Perro(nombre, color, raza, LocalDate.of(anioNac, mesNac, diaNac) , 100);
+        } else if (tipoMascota == 'g') {
+            m = new Gato(nombre, color, raza, LocalDate.of(anioNac, mesNac, diaNac) , 50);
+        } else if (tipoMascota == 'z') {
+            m = new Pez(nombre, color, raza, LocalDate.of(anioNac, mesNac, diaNac) , 10);
+        }        
+        
+        mascotas.add(m);
+
     }
 }
