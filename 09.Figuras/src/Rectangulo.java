@@ -11,10 +11,10 @@ public class Rectangulo extends Figura{
     private double base;
     private double altura;
     
-    public Rectangulo(String nombre, double base, double altura)
+    public Rectangulo(String nombre, double x, double y, double base, double altura)
     {
        // this.nombre = nombre;
-        super(nombre);
+        super(nombre,x,y);
         this.base = base;
         this.altura = altura;
     }

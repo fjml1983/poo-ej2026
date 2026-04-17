@@ -118,6 +118,7 @@ public class JuegoMascotasApp {
         int mesNac = 0;
         int diaNac = 0;
         
+        //Solicitar los datos de la mascota
         //Escribir aqui todos los scanner.next necesarios
         
         Mascota m = null;
@@ -128,7 +129,7 @@ public class JuegoMascotasApp {
         } else if (tipoMascota == 'z') {
             m = new Pez(nombre, color, raza, LocalDate.of(anioNac, mesNac, diaNac) , 10);
         }        
-        
+                
         mascotas.add(m);
 
     }

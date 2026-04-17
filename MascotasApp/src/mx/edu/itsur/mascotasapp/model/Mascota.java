@@ -7,7 +7,7 @@ import java.time.LocalDate;
  *
  * @author FJML1983
  */
-public class Mascota {
+public abstract class Mascota {
     protected String nombre;
     protected String color;
     protected String raza;    
@@ -21,6 +21,31 @@ public class Mascota {
         this.fechaDeNacimiento = fechaDeNacimiento;
         this.estadoDeSalud = estadoDeSalud;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public LocalDate getFechaDeNacimiento() {
+        return fechaDeNacimiento;
+    }
+
+    public int getEstadoDeSalud() {
+        return estadoDeSalud;
+    }
     
-        
+    public void comer(){
+        System.out.println("La mascota:" + this.nombre + " esta comiendo. ");
+    }               
+    
+    public abstract void jugar();
+    
 }

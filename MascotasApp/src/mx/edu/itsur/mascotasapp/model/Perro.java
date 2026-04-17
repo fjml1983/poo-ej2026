@@ -15,4 +15,14 @@ public class Perro extends Mascota {
    public Perro(String nombre, String color, String raza, LocalDate fechaDeNacimiento, int estadoDeSalud) {    
         super(nombre, color, raza, fechaDeNacimiento, estadoDeSalud);
     }    
+
+    @Override
+    public void jugar() {
+        System.out.println("      __");
+        System.out.println(" (___()'';      O  <-- ¡Lánzala!");
+        System.out.println(" /,    /`      /\\");
+        System.out.println(" \\\\\"--\\\\      /  \\");      
+    }
+   
+   
 }

@@ -3,18 +3,19 @@
  *
  * @author FJML1983
  */
-public class Figura {
+public abstract class Figura {
 
-    private String nombre;
+    protected String nombre;
+    protected double x;
+    protected double y;
 
-    public Figura(String nombre) {
+    public Figura(String nombre, double x, double y) {
         this.nombre = nombre;
+        this.x = x;
+        this.y = y;
     }
 
-    public double calcularArea() {
-        System.out.println("Aqui se debera calcular el area");
-        return 0;
-    }
+    public abstract double calcularArea();
 
     public void mostrarInfo() {
         System.out.println("Aqui se mostrara la info de la figura");
