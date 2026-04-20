@@ -7,7 +7,7 @@ import java.time.LocalDate;
  *
  * @author FJML1983
  */
-public abstract class Mascota {
+public abstract class Mascota implements IDiagnosticable {
     protected String nombre;
     protected String color;
     protected String raza;    
@@ -38,6 +38,7 @@ public abstract class Mascota {
         return fechaDeNacimiento;
     }
 
+    @Override
     public int getEstadoDeSalud() {
         return estadoDeSalud;
     }

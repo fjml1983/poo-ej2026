@@ -23,6 +23,11 @@ public class Perro extends Mascota {
         System.out.println(" /,    /`      /\\");
         System.out.println(" \\\\\"--\\\\      /  \\");      
     }
-   
+
+    @Override
+    public void updateEstadoDeSalud() {
+        //TODO: Aquí tenemos que programar
+        //como el perro debe actulzar su salud
+    }
    
 }

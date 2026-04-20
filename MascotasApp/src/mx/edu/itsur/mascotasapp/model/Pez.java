@@ -22,4 +22,9 @@ public class Pez extends Mascota {
         System.out.println("          \\      / //");
         System.out.println("           \\____/ //");
    }
+
+    @Override
+    public void updateEstadoDeSalud() {
+        //TODO:Programar como actualizar la salud 
+    }
 }

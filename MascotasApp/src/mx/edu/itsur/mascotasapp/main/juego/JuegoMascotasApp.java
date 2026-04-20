@@ -18,7 +18,7 @@ public class JuegoMascotasApp {
 
     public JuegoMascotasApp() {
         this.mascotas = new ArrayList();
-        this.veterinario = new Veterinario();
+        this.veterinario = new Veterinario("Dr.Brown","12345678",2);
         this.gameOver = false;
     }
 

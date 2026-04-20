@@ -21,5 +21,10 @@ public class Gato extends Mascota{
         System.out.println("    '---''(_/--'  `-'\\_)");
         System.out.println("          O  <-- Pelota");        
     }
+
+    @Override
+    public void updateEstadoDeSalud() {
+        //TODO:Programar como actualizar salud
+    }
            
 }
